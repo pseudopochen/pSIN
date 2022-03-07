@@ -19,21 +19,27 @@ time srun --mpi=pmi2 /home/pchen/ANGF/psin 20 32 /home/pchen/ANGF/binlst 500 655
 
 ### 2. explanation about the command-line inputs
 
-arg1 (20): process row number M
-arg2 (32): process column number N
-arg3 (binlst): a text file listing the absolute path to each *.bin data files
-arg4 (500): sampling rate of the seismograms (0.002 s)
-arg5 (65536): number of time samples per data segment (has to be power of 2)
-arg6 (0.2): width of the moving time window for time-domain normalization in seconds
-arg7 (100): width of the frequency-domain moving window in samples
+* arg1 (20): process row number M
+* arg2 (32): process column number N
+* arg3 (binlst): a text file listing the absolute path to each *.bin data files
+* arg4 (500): sampling rate of the seismograms (0.002 s)
+* arg5 (65536): number of time samples per data segment (has to be power of 2)
+* arg6 (0.2): width of the moving time window for time-domain normalization in seconds
+* arg7 (100): width of the frequency-domain moving window in samples
 
 
 ### 3. output files
 
 Two sets of output files name like:
-psin.idxRIDCID
-psin.ouRIDCID
-where RID, CID are 2-digit process ID. Both sets of files are binary. psin.idxRANK are 4-byte integers, psin.ouRANK are 4-byte floats.
-psin.idxRANK: read first into Matlab, it will give you the receiver IDs of each stacked xcorr
-psin.ouRANK: read after, stores all xcorr
+
+* psin.idxRIDCID
+* psin.ouRIDCID
+
+where RID, CID are 2-digit process ID.
+
+* Both sets of files are binary.
+* psin.idxRANK are 4-byte integers,
+* psin.ouRANK are 4-byte floats.
+* psin.idxRANK: read first into Matlab, it will give you the receiver IDs of each stacked xcorr
+* psin.ouRANK: read after, stores all xcorr
 
