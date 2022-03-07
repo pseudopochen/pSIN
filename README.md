@@ -6,6 +6,7 @@ Chen, Po, Nicholas J. Taylor, Ken G. Dueker, Ian S. Keifer, Andra K. Wilson, Cas
 
 example script:
 
+```
 #!/bin/sh
 #SBATCH --job-name=psin
 #SBATCH --account="your account"
@@ -14,6 +15,7 @@ example script:
 #SBATCH --time=0-01:00:00
 
 time srun --mpi=pmi2 /home/pchen/ANGF/psin 20 32 /home/pchen/ANGF/binlst 500 65536 0.2 100 500 1000 64000 65000  /glade/scratch/pochen/ANGF/BW3_xcor
+```
 
 ### 2. explanation about the command-line inputs
 
