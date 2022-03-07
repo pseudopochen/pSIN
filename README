@@ -1,7 +1,7 @@
-##Citation:
+## Citation:
 Chen, Po, Nicholas J. Taylor, Ken G. Dueker, Ian S. Keifer, Andra K. Wilson, Casey L. McGuffy, Christopher G. Novitsky, Alec J. Spears, and W. Steven Holbrook. "pSIN: A scalable, Parallel algorithm for Seismic INterferometry of large-N ambient-noise data." Computers & Geosciences 93 (2016): 88-95.
 
-##For a distributed-memory cluster
+## For a distributed-memory cluster
 1. write a job script name like "run.sh" following the syntax:
 
 example script:
