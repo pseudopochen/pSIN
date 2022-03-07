@@ -2,7 +2,7 @@
 Chen, Po, Nicholas J. Taylor, Ken G. Dueker, Ian S. Keifer, Andra K. Wilson, Casey L. McGuffy, Christopher G. Novitsky, Alec J. Spears, and W. Steven Holbrook. "pSIN: A scalable, Parallel algorithm for Seismic INterferometry of large-N ambient-noise data." Computers & Geosciences 93 (2016): 88-95.
 
 ## For a distributed-memory cluster
-1. write a job script name like "run.sh" following the syntax:
+###1. write a job script name like "run.sh" following the syntax:
 
 example script:
 
@@ -15,7 +15,7 @@ example script:
 
 time srun --mpi=pmi2 /home/pchen/ANGF/psin 20 32 /home/pchen/ANGF/binlst 500 65536 0.2 100 500 1000 64000 65000  /glade/scratch/pochen/ANGF/BW3_xcor
 
-2. explanation about the command-line inputs
+###2. explanation about the command-line inputs
 
 arg1 (20): process row number M
 arg2 (32): process column number N
@@ -26,7 +26,7 @@ arg6 (0.2): width of the moving time window for time-domain normalization in sec
 arg7 (100): width of the frequency-domain moving window in samples
 
 
-3. output files
+###3. output files
 
 Two sets of output files name like:
 psin.idxRIDCID
